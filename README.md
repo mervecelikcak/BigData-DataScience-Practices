@@ -81,7 +81,7 @@ This repository contains various assignments completed during my Master's degree
 
 ## 👩‍💻 Author
 
-**Merve Çelik Cakiroğlu**  
+**Merve Celik Cakiroglu**  
 Master’s in Big Data and Data Science  
 Universidad Autónoma de Madrid  
 [LinkedIn](https://www.linkedin.com/in/mervecelikcakiroglu/) | [Email](mervecelik94@gmail.com)
