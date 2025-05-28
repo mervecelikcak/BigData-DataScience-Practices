@@ -1,6 +1,6 @@
 # 🎓 Master's Assignments - Big Data and Data Science
 
-This repository contains various assignments completed during my Master's degree in **Big Data and Data Science** at **Universidad Autónoma de Madrid (2023–2024)**.
+This repository contains various assignments completed during my Master's degree in **Big Data and Data Science** at **Universidad Autónoma de Madrid (2023–2024)**. The assignments are written in English and mostly in Spanish.
 
 ---
 
