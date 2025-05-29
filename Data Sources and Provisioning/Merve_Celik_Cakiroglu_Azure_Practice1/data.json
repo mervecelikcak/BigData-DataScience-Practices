@@ -1,0 +1,479 @@
+[
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"geolocation\":{\"lat\":40.550621,\"lon\":-3.627754,\"alt\":738.4000244140625}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"accelerometer\":{\"x\":0.2989500164985657,\"y\":-0.034950003027915955,\"z\":9.820950508117676}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"gyroscope\":{\"x\":0.0006874999962747097,\"y\":-0.00013749999925494194,\"z\":-0.00013749999925494194}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"magnetometer\":{\"x\":1.3125,\"y\":-16.443750381469727,\"z\":-22.556251525878906}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"geolocation\":{\"lat\":40.550748,\"lon\":-3.6277655,\"alt\":735.2000122070312}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"battery\":50}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"accelerometer\":{\"x\":0.20805001258850098,\"y\":0.05700000375509262,\"z\":9.820950508117676}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"gyroscope\":{\"x\":-0.0004124999977648258,\"y\":0.0002749999985098839,\"z\":-0.00013749999925494194}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"magnetometer\":{\"x\":20.043750762939453,\"y\":-17.64375114440918,\"z\":-12.05625057220459}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"geolocation\":{\"lat\":40.550748,\"lon\":-3.6277655,\"alt\":735.2000122070312}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"battery\":50}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"accelerometer\":{\"x\":0.08100000023841858,\"y\":2.9659502506256104,\"z\":5.185050010681152}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"gyroscope\":{\"x\":0.9934374690055847,\"y\":-0.2638624906539917,\"z\":0.0009624999947845936}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"magnetometer\":{\"x\":-2.700000047683716,\"y\":-39.11250305175781,\"z\":0.5437500476837158}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"geolocation\":{\"lat\":40.550748,\"lon\":-3.6277655,\"alt\":735.2000122070312}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"battery\":50}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"accelerometer\":{\"x\":6.856050491333008,\"y\":7.017000198364258,\"z\":0.9499500393867493}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"gyroscope\":{\"x\":-0.0719124972820282,\"y\":-0.04441250115633011,\"z\":0.012649999931454659}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"magnetometer\":{\"x\":-51.656253814697266,\"y\":-4.743750095367432,\"z\":25.256250381469727}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"geolocation\":{\"lat\":40.550748,\"lon\":-3.6277655,\"alt\":735.2000122070312}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"battery\":50}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"accelerometer\":{\"x\":6.472950458526611,\"y\":7.446000576019287,\"z\":0.07095000147819519}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"gyroscope\":{\"x\":0.06668750196695328,\"y\":0.016224998980760574,\"z\":-0.00976249948143959}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"magnetometer\":{\"x\":-51.11250305175781,\"y\":-6.300000190734863,\"z\":26.943750381469727}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"geolocation\":{\"lat\":40.550748,\"lon\":-3.6277655,\"alt\":735.2000122070312}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"battery\":50}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"accelerometer\":{\"x\":1.4070000648498535,\"y\":5.08305025100708,\"z\":8.169000625610352}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"gyroscope\":{\"x\":0.20514999330043793,\"y\":-0.02736249938607216,\"z\":-0.025712499395012856}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"geolocation\":{\"lat\":40.550748,\"lon\":-3.6277655,\"alt\":735.2000122070312}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"magnetometer\":{\"x\":-11.15625,\"y\":-39.11250305175781,\"z\":4.200000286102295}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"battery\":50}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"accelerometer\":{\"x\":-5.73900032043457,\"y\":-0.9360000491142273,\"z\":5.736000061035156}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"gyroscope\":{\"x\":-3.1802375316619873,\"y\":0.9249625205993652,\"z\":-2.0411875247955322}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"geolocation\":{\"lat\":40.550748,\"lon\":-3.6277655,\"alt\":735.2000122070312}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"magnetometer\":{\"x\":40.80000305175781,\"y\":3.6000001430511475,\"z\":-15.656250953674316}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"battery\":50}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"accelerometer\":{\"x\":-8.281050682067871,\"y\":-3.9589502811431885,\"z\":-0.31095001101493835}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"gyroscope\":{\"x\":-0.3328875005245209,\"y\":0.014162499457597733,\"z\":0.19689999520778656}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"geolocation\":{\"lat\":40.550748,\"lon\":-3.6277655,\"alt\":735.2000122070312}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"battery\":50}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"magnetometer\":{\"x\":38.88750076293945,\"y\":-18.1875,\"z\":-4.987500190734863}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"accelerometer\":{\"x\":-6.13800048828125,\"y\":1.333050012588501,\"z\":4.3309502601623535}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"gyroscope\":{\"x\":0.43312498927116394,\"y\":-1.12681245803833,\"z\":1.1705374717712402}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"geolocation\":{\"lat\":40.550748,\"lon\":-3.6277655,\"alt\":735.2000122070312}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"battery\":50}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"magnetometer\":{\"x\":15.90000057220459,\"y\":-37.80000305175781,\"z\":7.012500286102295}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"accelerometer\":{\"x\":1.0260000228881836,\"y\":8.626049995422363,\"z\":6.790050506591797}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"gyroscope\":{\"x\":-0.3381125032901764,\"y\":-0.011412499472498894,\"z\":-0.11096250265836716}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"geolocation\":{\"lat\":40.550748,\"lon\":-3.6277655,\"alt\":735.2000122070312}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"magnetometer\":{\"x\":19.087501525878906,\"y\":-20.34375,\"z\":-16.743751525878906}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"battery\":50}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"accelerometer\":{\"x\":0.19095000624656677,\"y\":0.024000000208616257,\"z\":9.805950164794922}}"
+        }
+    },
+    {
+        "event": {
+            "origin": "merve-device-cellphone",
+            "module": "",
+            "interface": "dtmi:azureiot:PhoneAsADevice;2",
+            "component": "sensors",
+            "payload": "{\"gyroscope\":{\"x\":-0.0004124999977648258,\"y\":0.0002749999985098839,\"z\":-0.00013749999925494194}}"
+        }
+    }
+]
