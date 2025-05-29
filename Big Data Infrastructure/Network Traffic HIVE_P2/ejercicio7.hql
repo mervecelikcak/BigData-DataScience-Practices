@@ -1,0 +1,9 @@
+set mapreduce.map.memory.mb;
+set mapreduce.map.java.opts;
+set mapreduce.reduce.memory.mb;
+set mapreduce.reduce.java.opts;
+set mapreduce.task.io.sort.mb;
+set yarn.scheduler.minimum-allocation-mb;
+set yarn.scheduler.maximum-allocation-mb;
+set yarn.scheduler.minimum-allocation-vcores;
+set yarn.scheduler.maximum-allocation-vcores;
