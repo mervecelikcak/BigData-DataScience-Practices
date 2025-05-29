@@ -1,0 +1,31 @@
+22-04-2024 23:09:59 Arrancando...
+22-04-2024 23:10:00 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+22-04-2024 23:10:00 Probing node bootstrap-0 broker version
+22-04-2024 23:10:00 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+22-04-2024 23:10:00 Broker version identified as 2.5.0
+22-04-2024 23:10:00 Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+22-04-2024 23:10:00 Updating subscribed topics to: ('my-topic',)
+22-04-2024 23:10:00 Group coordinator for my-processing-group is BrokerMetadata(nodeId='coordinator-0', host='ibmuamdocker', port=9092, rack=None)
+22-04-2024 23:10:00 Discovered coordinator coordinator-0 for group my-processing-group
+22-04-2024 23:10:00 Starting new heartbeat thread
+22-04-2024 23:10:00 Revoking previously assigned partitions set() for group my-processing-group
+22-04-2024 23:10:00 <BrokerConnection node_id=coordinator-0 host=ibmuamdocker:9092 <connecting> [IPv6 ('fe80::c717:1016:6e0c:b35a%enp0s3', 9092, 0, 2)]>: connecting to ibmuamdocker:9092 [('fe80::c717:1016:6e0c:b35a%enp0s3', 9092, 0, 2) IPv6]
+22-04-2024 23:10:00 <BrokerConnection node_id=coordinator-0 host=ibmuamdocker:9092 <connecting> [IPv6 ('fe80::c717:1016:6e0c:b35a%enp0s3', 9092, 0, 2)]>: Connection complete.
+22-04-2024 23:10:00 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+22-04-2024 23:10:00 (Re-)joining group my-processing-group
+22-04-2024 23:10:00 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+22-04-2024 23:10:00 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+22-04-2024 23:10:00 Elected group leader -- performing partition assignments using range
+22-04-2024 23:10:00 No partition metadata for topic my-topic
+22-04-2024 23:10:00 Successfully joined group my-processing-group with generation 1
+22-04-2024 23:10:00 Updated partition assignment: []
+22-04-2024 23:10:00 Setting newly assigned partitions set() for group my-processing-group
+22-04-2024 23:10:00 Revoking previously assigned partitions set() for group my-processing-group
+22-04-2024 23:10:00 (Re-)joining group my-processing-group
+22-04-2024 23:10:00 Elected group leader -- performing partition assignments using range
+22-04-2024 23:10:00 Successfully joined group my-processing-group with generation 2
+22-04-2024 23:10:00 Updated partition assignment: [TopicPartition(topic='my-topic', partition=0)]
+22-04-2024 23:10:00 Setting newly assigned partitions {TopicPartition(topic='my-topic', partition=0)} for group my-processing-group
+22-04-2024 23:10:00 <BrokerConnection node_id=0 host=ibmuamdocker:9092 <connecting> [IPv6 ('fe80::c717:1016:6e0c:b35a%enp0s3', 9092, 0, 2)]>: connecting to ibmuamdocker:9092 [('fe80::c717:1016:6e0c:b35a%enp0s3', 9092, 0, 2) IPv6]
+22-04-2024 23:10:00 <BrokerConnection node_id=0 host=ibmuamdocker:9092 <connecting> [IPv6 ('fe80::c717:1016:6e0c:b35a%enp0s3', 9092, 0, 2)]>: Connection complete.
+22-04-2024 23:10:00 <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 

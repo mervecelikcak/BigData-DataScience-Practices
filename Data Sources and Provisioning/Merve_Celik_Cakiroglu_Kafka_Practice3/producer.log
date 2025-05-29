@@ -1,0 +1,247 @@
+22-04-2024 23:09:39 Arrancando...
+22-04-2024 23:09:39 Exception while connecting producer
+22-04-2024 23:09:39 descriptor 'encode' of 'str' object needs an argument
+22-04-2024 23:09:39 Conexión a broker: None
+22-04-2024 23:09:39 {'user_id': 27570, 'user_name': 'Olegario Chacón Casal', 'user_address': 'C. Narcisa Naranjo 20 | Cuenca | SI', 'platform': 'Laptop', 'signup_at': '2024-04-19 09:32:29'}
+22-04-2024 23:09:39 Excepción al publicar el mensaje
+22-04-2024 23:09:39 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:39 {'user_id': 27570, 'user_name': 'Olegario Chacón Casal', 'user_address': 'C. Narcisa Naranjo 20 | Cuenca | SI', 'platform': 'Laptop', 'signup_at': '2024-04-19 09:32:29'}
+22-04-2024 23:09:40 {'user_id': 70265, 'user_name': 'Buenaventura Roque Vila Tapia', 'user_address': 'Alameda Lilia Giralt 99 Piso 7  | Guadalajara | HU', 'platform': 'Laptop', 'signup_at': '2024-04-17 21:53:51'}
+22-04-2024 23:09:40 Excepción al publicar el mensaje
+22-04-2024 23:09:40 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:40 {'user_id': 70265, 'user_name': 'Buenaventura Roque Vila Tapia', 'user_address': 'Alameda Lilia Giralt 99 Piso 7  | Guadalajara | HU', 'platform': 'Laptop', 'signup_at': '2024-04-17 21:53:51'}
+22-04-2024 23:09:41 {'user_id': 54713, 'user_name': 'Angelita Garmendia Hernández', 'user_address': 'Camino Nacio Gras 19 Puerta 1  | Valencia | DJ', 'platform': 'Laptop', 'signup_at': '2024-04-11 15:09:33'}
+22-04-2024 23:09:41 Excepción al publicar el mensaje
+22-04-2024 23:09:41 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:41 {'user_id': 54713, 'user_name': 'Angelita Garmendia Hernández', 'user_address': 'Camino Nacio Gras 19 Puerta 1  | Valencia | DJ', 'platform': 'Laptop', 'signup_at': '2024-04-11 15:09:33'}
+22-04-2024 23:09:42 {'user_id': 70549, 'user_name': 'Lucila Lastra Esteban', 'user_address': 'Calle de Isabela Zurita 92 Puerta 3  | Segovia | NG', 'platform': 'Tablet', 'signup_at': '2024-04-01 20:13:00'}
+22-04-2024 23:09:42 Excepción al publicar el mensaje
+22-04-2024 23:09:42 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:42 {'user_id': 70549, 'user_name': 'Lucila Lastra Esteban', 'user_address': 'Calle de Isabela Zurita 92 Puerta 3  | Segovia | NG', 'platform': 'Tablet', 'signup_at': '2024-04-01 20:13:00'}
+22-04-2024 23:09:43 {'user_id': 66277, 'user_name': 'Bartolomé Contreras Herrero', 'user_address': 'Vial de Mirta Palacios 50 | Álava | CO', 'platform': 'Laptop', 'signup_at': '2024-04-14 19:23:31'}
+22-04-2024 23:09:43 Excepción al publicar el mensaje
+22-04-2024 23:09:43 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:43 {'user_id': 66277, 'user_name': 'Bartolomé Contreras Herrero', 'user_address': 'Vial de Mirta Palacios 50 | Álava | CO', 'platform': 'Laptop', 'signup_at': '2024-04-14 19:23:31'}
+22-04-2024 23:09:44 {'user_id': 93615, 'user_name': 'Vicente Ramírez Casado', 'user_address': 'Plaza de Josefa Pallarès 52 | Alicante | DM', 'platform': 'Tablet', 'signup_at': '2024-04-12 11:39:18'}
+22-04-2024 23:09:44 Excepción al publicar el mensaje
+22-04-2024 23:09:44 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:44 {'user_id': 93615, 'user_name': 'Vicente Ramírez Casado', 'user_address': 'Plaza de Josefa Pallarès 52 | Alicante | DM', 'platform': 'Tablet', 'signup_at': '2024-04-12 11:39:18'}
+22-04-2024 23:09:45 {'user_id': 88959, 'user_name': 'Arturo Carlito Arana Sotelo', 'user_address': 'Ronda Adoración Ballesteros 21 Puerta 7  | Murcia | DO', 'platform': 'Mobile', 'signup_at': '2024-04-05 17:36:07'}
+22-04-2024 23:09:45 Excepción al publicar el mensaje
+22-04-2024 23:09:45 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:45 {'user_id': 88959, 'user_name': 'Arturo Carlito Arana Sotelo', 'user_address': 'Ronda Adoración Ballesteros 21 Puerta 7  | Murcia | DO', 'platform': 'Mobile', 'signup_at': '2024-04-05 17:36:07'}
+22-04-2024 23:09:46 {'user_id': 43872, 'user_name': 'Lupe Reig Sala', 'user_address': 'Acceso de Sonia Mulet 59 Puerta 2  | Santa Cruz de Tenerife | AL', 'platform': 'Mobile', 'signup_at': '2024-04-01 01:03:28'}
+22-04-2024 23:09:46 Excepción al publicar el mensaje
+22-04-2024 23:09:46 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:46 {'user_id': 43872, 'user_name': 'Lupe Reig Sala', 'user_address': 'Acceso de Sonia Mulet 59 Puerta 2  | Santa Cruz de Tenerife | AL', 'platform': 'Mobile', 'signup_at': '2024-04-01 01:03:28'}
+22-04-2024 23:09:47 {'user_id': 38165, 'user_name': 'Edelmiro de Pedro', 'user_address': 'Ronda Eloísa Palmer 51 | Teruel | AO', 'platform': 'Laptop', 'signup_at': '2024-04-12 17:13:30'}
+22-04-2024 23:09:47 Excepción al publicar el mensaje
+22-04-2024 23:09:47 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:47 {'user_id': 38165, 'user_name': 'Edelmiro de Pedro', 'user_address': 'Ronda Eloísa Palmer 51 | Teruel | AO', 'platform': 'Laptop', 'signup_at': '2024-04-12 17:13:30'}
+22-04-2024 23:09:48 {'user_id': 81140, 'user_name': 'Benjamín Jacobo Noguera Luna', 'user_address': 'Alameda de Jose Luis Manjón 20 Puerta 5  | Ourense | UG', 'platform': 'Mobile', 'signup_at': '2024-04-15 20:05:35'}
+22-04-2024 23:09:48 Excepción al publicar el mensaje
+22-04-2024 23:09:48 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:48 {'user_id': 81140, 'user_name': 'Benjamín Jacobo Noguera Luna', 'user_address': 'Alameda de Jose Luis Manjón 20 Puerta 5  | Ourense | UG', 'platform': 'Mobile', 'signup_at': '2024-04-15 20:05:35'}
+22-04-2024 23:09:49 {'user_id': 29626, 'user_name': 'Florentina Manuel Páez', 'user_address': 'Acceso de Santos Ángel 420 Apt. 44  | Soria | ZW', 'platform': 'Mobile', 'signup_at': '2024-04-01 09:06:43'}
+22-04-2024 23:09:49 Excepción al publicar el mensaje
+22-04-2024 23:09:49 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:49 {'user_id': 29626, 'user_name': 'Florentina Manuel Páez', 'user_address': 'Acceso de Santos Ángel 420 Apt. 44  | Soria | ZW', 'platform': 'Mobile', 'signup_at': '2024-04-01 09:06:43'}
+22-04-2024 23:09:50 {'user_id': 20957, 'user_name': 'Camilo Santamaría Álvarez', 'user_address': 'Ronda Ignacio Jurado 72 Apt. 50  | Zaragoza | LA', 'platform': 'Laptop', 'signup_at': '2024-04-02 16:09:50'}
+22-04-2024 23:09:50 Excepción al publicar el mensaje
+22-04-2024 23:09:50 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:50 {'user_id': 20957, 'user_name': 'Camilo Santamaría Álvarez', 'user_address': 'Ronda Ignacio Jurado 72 Apt. 50  | Zaragoza | LA', 'platform': 'Laptop', 'signup_at': '2024-04-02 16:09:50'}
+22-04-2024 23:09:51 {'user_id': 73198, 'user_name': 'Eladio Campoy Coca', 'user_address': 'Camino Ibán Echevarría 13 Puerta 0  | Jaén | CO', 'platform': 'Tablet', 'signup_at': '2024-04-02 07:32:28'}
+22-04-2024 23:09:51 Excepción al publicar el mensaje
+22-04-2024 23:09:51 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:51 {'user_id': 73198, 'user_name': 'Eladio Campoy Coca', 'user_address': 'Camino Ibán Echevarría 13 Puerta 0  | Jaén | CO', 'platform': 'Tablet', 'signup_at': '2024-04-02 07:32:28'}
+22-04-2024 23:09:52 {'user_id': 60790, 'user_name': 'Javier Arce Bernal', 'user_address': 'Pasaje Rosenda Lamas 51 | Segovia | SV', 'platform': 'Mobile', 'signup_at': '2024-04-18 06:35:57'}
+22-04-2024 23:09:52 Excepción al publicar el mensaje
+22-04-2024 23:09:52 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:52 {'user_id': 60790, 'user_name': 'Javier Arce Bernal', 'user_address': 'Pasaje Rosenda Lamas 51 | Segovia | SV', 'platform': 'Mobile', 'signup_at': '2024-04-18 06:35:57'}
+22-04-2024 23:09:53 {'user_id': 51462, 'user_name': 'Asunción Marín Espinosa', 'user_address': 'Cuesta de Lourdes Rocamora 80 | Toledo | IS', 'platform': 'Laptop', 'signup_at': '2024-04-21 07:48:12'}
+22-04-2024 23:09:53 Excepción al publicar el mensaje
+22-04-2024 23:09:53 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:53 {'user_id': 51462, 'user_name': 'Asunción Marín Espinosa', 'user_address': 'Cuesta de Lourdes Rocamora 80 | Toledo | IS', 'platform': 'Laptop', 'signup_at': '2024-04-21 07:48:12'}
+22-04-2024 23:09:54 {'user_id': 42462, 'user_name': 'Melisa Mendizábal Palomo', 'user_address': 'Via de Lope Aguilar 56 Piso 3  | Soria | YE', 'platform': 'Mobile', 'signup_at': '2024-04-06 21:02:10'}
+22-04-2024 23:09:54 Excepción al publicar el mensaje
+22-04-2024 23:09:54 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:54 {'user_id': 42462, 'user_name': 'Melisa Mendizábal Palomo', 'user_address': 'Via de Lope Aguilar 56 Piso 3  | Soria | YE', 'platform': 'Mobile', 'signup_at': '2024-04-06 21:02:10'}
+22-04-2024 23:09:55 {'user_id': 83006, 'user_name': 'Marina Collado Fernández', 'user_address': 'Urbanización de Bernarda Gomez 68 | Guadalajara | AT', 'platform': 'Laptop', 'signup_at': '2024-04-16 18:38:10'}
+22-04-2024 23:09:55 Excepción al publicar el mensaje
+22-04-2024 23:09:55 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:55 {'user_id': 83006, 'user_name': 'Marina Collado Fernández', 'user_address': 'Urbanización de Bernarda Gomez 68 | Guadalajara | AT', 'platform': 'Laptop', 'signup_at': '2024-04-16 18:38:10'}
+22-04-2024 23:09:56 {'user_id': 28031, 'user_name': 'Fabiana Fuentes Bernat', 'user_address': 'Rambla César Pera 26 Piso 3  | Málaga | TZ', 'platform': 'Laptop', 'signup_at': '2024-04-14 10:50:34'}
+22-04-2024 23:09:56 Excepción al publicar el mensaje
+22-04-2024 23:09:56 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:56 {'user_id': 28031, 'user_name': 'Fabiana Fuentes Bernat', 'user_address': 'Rambla César Pera 26 Piso 3  | Málaga | TZ', 'platform': 'Laptop', 'signup_at': '2024-04-14 10:50:34'}
+22-04-2024 23:09:57 {'user_id': 87038, 'user_name': 'Marisela García Trillo', 'user_address': 'Acceso Fabio Segovia 83 Apt. 06  | Burgos | IL', 'platform': 'Laptop', 'signup_at': '2024-04-01 22:37:46'}
+22-04-2024 23:09:57 Excepción al publicar el mensaje
+22-04-2024 23:09:57 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:57 {'user_id': 87038, 'user_name': 'Marisela García Trillo', 'user_address': 'Acceso Fabio Segovia 83 Apt. 06  | Burgos | IL', 'platform': 'Laptop', 'signup_at': '2024-04-01 22:37:46'}
+22-04-2024 23:09:58 {'user_id': 33110, 'user_name': 'Benigno Vasco Abad Pastor', 'user_address': 'Calle Leticia Peláez 1 Piso 7  | Málaga | VA', 'platform': 'Mobile', 'signup_at': '2024-04-10 13:51:47'}
+22-04-2024 23:09:58 Excepción al publicar el mensaje
+22-04-2024 23:09:58 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:58 {'user_id': 33110, 'user_name': 'Benigno Vasco Abad Pastor', 'user_address': 'Calle Leticia Peláez 1 Piso 7  | Málaga | VA', 'platform': 'Mobile', 'signup_at': '2024-04-10 13:51:47'}
+22-04-2024 23:09:59 {'user_id': 98963, 'user_name': 'Jose Luis Echevarría Requena', 'user_address': 'Callejón de Eva María Solé 86 | Soria | MH', 'platform': 'Tablet', 'signup_at': '2024-04-06 17:04:33'}
+22-04-2024 23:09:59 Excepción al publicar el mensaje
+22-04-2024 23:09:59 'NoneType' object has no attribute 'send'
+22-04-2024 23:09:59 {'user_id': 98963, 'user_name': 'Jose Luis Echevarría Requena', 'user_address': 'Callejón de Eva María Solé 86 | Soria | MH', 'platform': 'Tablet', 'signup_at': '2024-04-06 17:04:33'}
+22-04-2024 23:10:01 {'user_id': 85157, 'user_name': 'Ricardo Régulo Esteve Murillo', 'user_address': 'Rambla Agapito Roig 8 Piso 9  | Huesca | MN', 'platform': 'Laptop', 'signup_at': '2024-04-09 02:29:44'}
+22-04-2024 23:10:01 Excepción al publicar el mensaje
+22-04-2024 23:10:01 'NoneType' object has no attribute 'send'
+22-04-2024 23:10:01 {'user_id': 85157, 'user_name': 'Ricardo Régulo Esteve Murillo', 'user_address': 'Rambla Agapito Roig 8 Piso 9  | Huesca | MN', 'platform': 'Laptop', 'signup_at': '2024-04-09 02:29:44'}
+22-04-2024 23:10:02 {'user_id': 45735, 'user_name': 'Caridad Enríquez Borrego', 'user_address': 'Via de Gonzalo Moliner 18 | Murcia | VN', 'platform': 'Tablet', 'signup_at': '2024-04-09 07:37:16'}
+22-04-2024 23:10:02 Excepción al publicar el mensaje
+22-04-2024 23:10:02 'NoneType' object has no attribute 'send'
+22-04-2024 23:10:02 {'user_id': 45735, 'user_name': 'Caridad Enríquez Borrego', 'user_address': 'Via de Gonzalo Moliner 18 | Murcia | VN', 'platform': 'Tablet', 'signup_at': '2024-04-09 07:37:16'}
+22-04-2024 23:10:03 {'user_id': 54611, 'user_name': 'Maxi Tomás', 'user_address': 'Acceso de Marc Gras 693 | Lleida | HT', 'platform': 'Mobile', 'signup_at': '2024-04-11 23:12:54'}
+22-04-2024 23:10:03 Excepción al publicar el mensaje
+22-04-2024 23:10:03 'NoneType' object has no attribute 'send'
+22-04-2024 23:10:03 {'user_id': 54611, 'user_name': 'Maxi Tomás', 'user_address': 'Acceso de Marc Gras 693 | Lleida | HT', 'platform': 'Mobile', 'signup_at': '2024-04-11 23:12:54'}
+22-04-2024 23:10:04 {'user_id': 44126, 'user_name': 'Guadalupe Sanmiguel Montero', 'user_address': 'Via de Chus Arellano 6 | Navarra | LA', 'platform': 'Mobile', 'signup_at': '2024-04-14 09:04:09'}
+22-04-2024 23:10:04 Excepción al publicar el mensaje
+22-04-2024 23:10:04 'NoneType' object has no attribute 'send'
+22-04-2024 23:10:04 {'user_id': 44126, 'user_name': 'Guadalupe Sanmiguel Montero', 'user_address': 'Via de Chus Arellano 6 | Navarra | LA', 'platform': 'Mobile', 'signup_at': '2024-04-14 09:04:09'}
+22-04-2024 23:10:05 {'user_id': 49137, 'user_name': 'Tania Belmonte Romero', 'user_address': 'Alameda de Belen Frutos 636 | Salamanca | SI', 'platform': 'Laptop', 'signup_at': '2024-04-02 14:33:58'}
+22-04-2024 23:10:05 Excepción al publicar el mensaje
+22-04-2024 23:10:05 'NoneType' object has no attribute 'send'
+22-04-2024 23:10:05 {'user_id': 49137, 'user_name': 'Tania Belmonte Romero', 'user_address': 'Alameda de Belen Frutos 636 | Salamanca | SI', 'platform': 'Laptop', 'signup_at': '2024-04-02 14:33:58'}
+22-04-2024 23:10:06 {'user_id': 47746, 'user_name': 'Isa Azahar Jara Manrique', 'user_address': 'Pasaje León Alvarez 60 Piso 1  | Teruel | NR', 'platform': 'Mobile', 'signup_at': '2024-04-13 15:36:08'}
+22-04-2024 23:10:06 Excepción al publicar el mensaje
+22-04-2024 23:10:06 'NoneType' object has no attribute 'send'
+22-04-2024 23:10:06 {'user_id': 47746, 'user_name': 'Isa Azahar Jara Manrique', 'user_address': 'Pasaje León Alvarez 60 Piso 1  | Teruel | NR', 'platform': 'Mobile', 'signup_at': '2024-04-13 15:36:08'}
+22-04-2024 23:10:07 {'user_id': 50945, 'user_name': 'Duilio Verdú Bustamante', 'user_address': 'Acceso de Chema Gimenez 48 Piso 9  | Guadalajara | IS', 'platform': 'Mobile', 'signup_at': '2024-04-14 04:24:05'}
+22-04-2024 23:10:07 Excepción al publicar el mensaje
+22-04-2024 23:10:07 'NoneType' object has no attribute 'send'
+22-04-2024 23:10:07 {'user_id': 50945, 'user_name': 'Duilio Verdú Bustamante', 'user_address': 'Acceso de Chema Gimenez 48 Piso 9  | Guadalajara | IS', 'platform': 'Mobile', 'signup_at': '2024-04-14 04:24:05'}
+22-04-2024 23:10:08 {'user_id': 35214, 'user_name': 'Cándida Matas-Porta', 'user_address': 'Alameda de Lucila Ibáñez 94 | Asturias | NL', 'platform': 'Tablet', 'signup_at': '2024-04-03 09:23:26'}
+22-04-2024 23:10:08 Excepción al publicar el mensaje
+22-04-2024 23:10:08 'NoneType' object has no attribute 'send'
+22-04-2024 23:10:08 {'user_id': 35214, 'user_name': 'Cándida Matas-Porta', 'user_address': 'Alameda de Lucila Ibáñez 94 | Asturias | NL', 'platform': 'Tablet', 'signup_at': '2024-04-03 09:23:26'}
+22-04-2024 23:10:09 {'user_id': 52994, 'user_name': 'Dan del Teruel', 'user_address': 'Cañada Íngrid Peinado 55 Apt. 12  | Las Palmas | IR', 'platform': 'Tablet', 'signup_at': '2024-04-19 02:11:02'}
+22-04-2024 23:10:09 Excepción al publicar el mensaje
+22-04-2024 23:10:09 'NoneType' object has no attribute 'send'
+22-04-2024 23:10:09 {'user_id': 52994, 'user_name': 'Dan del Teruel', 'user_address': 'Cañada Íngrid Peinado 55 Apt. 12  | Las Palmas | IR', 'platform': 'Tablet', 'signup_at': '2024-04-19 02:11:02'}
+22-04-2024 23:12:30 Exception while connecting producer
+22-04-2024 23:12:30 descriptor 'encode' of 'str' object needs an argument
+22-04-2024 23:12:30 Conexión a broker: None
+22-04-2024 23:12:30 {'user_id': 89434, 'user_name': 'Santiago Segura Dávila', 'user_address': 'Via Pelayo Asensio 39 Puerta 1  | Huelva | TV', 'platform': 'Laptop', 'signup_at': '2024-04-15 16:51:02'}
+22-04-2024 23:12:30 Excepción al publicar el mensaje
+22-04-2024 23:12:30 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:30 {'user_id': 89434, 'user_name': 'Santiago Segura Dávila', 'user_address': 'Via Pelayo Asensio 39 Puerta 1  | Huelva | TV', 'platform': 'Laptop', 'signup_at': '2024-04-15 16:51:02'}
+22-04-2024 23:12:31 {'user_id': 96866, 'user_name': 'Rolando Gomez Alberto', 'user_address': 'Alameda de Griselda Pinedo 15 Puerta 5  | Lleida | CL', 'platform': 'Mobile', 'signup_at': '2024-04-02 03:17:49'}
+22-04-2024 23:12:31 Excepción al publicar el mensaje
+22-04-2024 23:12:31 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:31 {'user_id': 96866, 'user_name': 'Rolando Gomez Alberto', 'user_address': 'Alameda de Griselda Pinedo 15 Puerta 5  | Lleida | CL', 'platform': 'Mobile', 'signup_at': '2024-04-02 03:17:49'}
+22-04-2024 23:12:32 {'user_id': 59163, 'user_name': 'Goyo Manjón Martínez', 'user_address': 'Urbanización de Dimas Tudela 54 Piso 8  | León | MW', 'platform': 'Tablet', 'signup_at': '2024-04-09 19:06:58'}
+22-04-2024 23:12:32 Excepción al publicar el mensaje
+22-04-2024 23:12:32 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:32 {'user_id': 59163, 'user_name': 'Goyo Manjón Martínez', 'user_address': 'Urbanización de Dimas Tudela 54 Piso 8  | León | MW', 'platform': 'Tablet', 'signup_at': '2024-04-09 19:06:58'}
+22-04-2024 23:12:33 {'user_id': 57468, 'user_name': 'Geraldo Leiva Perez', 'user_address': 'Pasadizo de Teófila Vall 17 | Badajoz | KM', 'platform': 'Laptop', 'signup_at': '2024-04-11 10:50:50'}
+22-04-2024 23:12:33 Excepción al publicar el mensaje
+22-04-2024 23:12:33 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:33 {'user_id': 57468, 'user_name': 'Geraldo Leiva Perez', 'user_address': 'Pasadizo de Teófila Vall 17 | Badajoz | KM', 'platform': 'Laptop', 'signup_at': '2024-04-11 10:50:50'}
+22-04-2024 23:12:34 {'user_id': 27393, 'user_name': 'Irma Martínez', 'user_address': 'C. de Elpidio Bolaños 52 | Jaén | BY', 'platform': 'Tablet', 'signup_at': '2024-04-05 02:03:32'}
+22-04-2024 23:12:34 Excepción al publicar el mensaje
+22-04-2024 23:12:34 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:34 {'user_id': 27393, 'user_name': 'Irma Martínez', 'user_address': 'C. de Elpidio Bolaños 52 | Jaén | BY', 'platform': 'Tablet', 'signup_at': '2024-04-05 02:03:32'}
+22-04-2024 23:12:35 {'user_id': 79606, 'user_name': 'Natividad Maldonado Benavente', 'user_address': 'Pasaje Amancio Olmo 341 | Vizcaya | SM', 'platform': 'Tablet', 'signup_at': '2024-04-01 23:06:47'}
+22-04-2024 23:12:35 Excepción al publicar el mensaje
+22-04-2024 23:12:35 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:35 {'user_id': 79606, 'user_name': 'Natividad Maldonado Benavente', 'user_address': 'Pasaje Amancio Olmo 341 | Vizcaya | SM', 'platform': 'Tablet', 'signup_at': '2024-04-01 23:06:47'}
+22-04-2024 23:12:36 {'user_id': 28461, 'user_name': 'Darío Samper Saavedra', 'user_address': 'Vial de Ruth Solano 871 Apt. 06  | Castellón | AL', 'platform': 'Mobile', 'signup_at': '2024-04-20 21:41:27'}
+22-04-2024 23:12:36 Excepción al publicar el mensaje
+22-04-2024 23:12:36 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:36 {'user_id': 28461, 'user_name': 'Darío Samper Saavedra', 'user_address': 'Vial de Ruth Solano 871 Apt. 06  | Castellón | AL', 'platform': 'Mobile', 'signup_at': '2024-04-20 21:41:27'}
+22-04-2024 23:12:37 {'user_id': 32875, 'user_name': 'Jose Carlos Alejandro Plaza Solé', 'user_address': 'Calle de Marisol Salazar 44 Apt. 55  | Lugo | BY', 'platform': 'Laptop', 'signup_at': '2024-04-10 06:40:38'}
+22-04-2024 23:12:37 Excepción al publicar el mensaje
+22-04-2024 23:12:37 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:37 {'user_id': 32875, 'user_name': 'Jose Carlos Alejandro Plaza Solé', 'user_address': 'Calle de Marisol Salazar 44 Apt. 55  | Lugo | BY', 'platform': 'Laptop', 'signup_at': '2024-04-10 06:40:38'}
+22-04-2024 23:12:38 {'user_id': 96916, 'user_name': 'Jessica Larrea Boada', 'user_address': 'Plaza de Leire Márquez 98 | Girona | KG', 'platform': 'Mobile', 'signup_at': '2024-04-05 11:27:26'}
+22-04-2024 23:12:38 Excepción al publicar el mensaje
+22-04-2024 23:12:38 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:38 {'user_id': 96916, 'user_name': 'Jessica Larrea Boada', 'user_address': 'Plaza de Leire Márquez 98 | Girona | KG', 'platform': 'Mobile', 'signup_at': '2024-04-05 11:27:26'}
+22-04-2024 23:12:39 {'user_id': 41668, 'user_name': 'Pablo Sevillano Canals', 'user_address': 'Acceso de Susana Cazorla 70 | Granada | IN', 'platform': 'Mobile', 'signup_at': '2024-04-16 22:36:15'}
+22-04-2024 23:12:39 Excepción al publicar el mensaje
+22-04-2024 23:12:39 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:39 {'user_id': 41668, 'user_name': 'Pablo Sevillano Canals', 'user_address': 'Acceso de Susana Cazorla 70 | Granada | IN', 'platform': 'Mobile', 'signup_at': '2024-04-16 22:36:15'}
+22-04-2024 23:12:40 {'user_id': 76993, 'user_name': 'Martin del Hierro', 'user_address': 'C. Nerea Aguado 609 Puerta 3  | Tarragona | NE', 'platform': 'Laptop', 'signup_at': '2024-04-16 17:12:03'}
+22-04-2024 23:12:40 Excepción al publicar el mensaje
+22-04-2024 23:12:40 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:40 {'user_id': 76993, 'user_name': 'Martin del Hierro', 'user_address': 'C. Nerea Aguado 609 Puerta 3  | Tarragona | NE', 'platform': 'Laptop', 'signup_at': '2024-04-16 17:12:03'}
+22-04-2024 23:12:41 {'user_id': 51516, 'user_name': 'Marcia Cámara-Roman', 'user_address': 'Via Marcia Ugarte 65 Piso 0  | Cuenca | MC', 'platform': 'Laptop', 'signup_at': '2024-04-06 07:57:24'}
+22-04-2024 23:12:41 Excepción al publicar el mensaje
+22-04-2024 23:12:41 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:41 {'user_id': 51516, 'user_name': 'Marcia Cámara-Roman', 'user_address': 'Via Marcia Ugarte 65 Piso 0  | Cuenca | MC', 'platform': 'Laptop', 'signup_at': '2024-04-06 07:57:24'}
+22-04-2024 23:12:42 {'user_id': 26561, 'user_name': 'Reina Galván Cornejo', 'user_address': 'Acceso de Rogelio Pedrosa 9 Apt. 26  | León | IR', 'platform': 'Laptop', 'signup_at': '2024-04-06 11:58:02'}
+22-04-2024 23:12:42 Excepción al publicar el mensaje
+22-04-2024 23:12:42 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:42 {'user_id': 26561, 'user_name': 'Reina Galván Cornejo', 'user_address': 'Acceso de Rogelio Pedrosa 9 Apt. 26  | León | IR', 'platform': 'Laptop', 'signup_at': '2024-04-06 11:58:02'}
+22-04-2024 23:12:43 {'user_id': 55130, 'user_name': 'Candelario Jódar Valencia', 'user_address': 'Paseo de Zacarías Arrieta 502 Piso 3  | Navarra | VU', 'platform': 'Mobile', 'signup_at': '2024-04-09 02:40:33'}
+22-04-2024 23:12:43 Excepción al publicar el mensaje
+22-04-2024 23:12:43 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:43 {'user_id': 55130, 'user_name': 'Candelario Jódar Valencia', 'user_address': 'Paseo de Zacarías Arrieta 502 Piso 3  | Navarra | VU', 'platform': 'Mobile', 'signup_at': '2024-04-09 02:40:33'}
+22-04-2024 23:12:44 {'user_id': 24719, 'user_name': 'Mónica Baró Ferrando', 'user_address': 'Ronda de Elisa Rodrigo 92 | Lugo | QA', 'platform': 'Laptop', 'signup_at': '2024-04-13 03:43:38'}
+22-04-2024 23:12:44 Excepción al publicar el mensaje
+22-04-2024 23:12:44 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:44 {'user_id': 24719, 'user_name': 'Mónica Baró Ferrando', 'user_address': 'Ronda de Elisa Rodrigo 92 | Lugo | QA', 'platform': 'Laptop', 'signup_at': '2024-04-13 03:43:38'}
+22-04-2024 23:12:45 {'user_id': 34368, 'user_name': 'Jose Ignacio del Fonseca', 'user_address': 'Cañada Ruy Saez 6 | Asturias | AD', 'platform': 'Tablet', 'signup_at': '2024-04-19 07:13:49'}
+22-04-2024 23:12:45 Excepción al publicar el mensaje
+22-04-2024 23:12:45 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:45 {'user_id': 34368, 'user_name': 'Jose Ignacio del Fonseca', 'user_address': 'Cañada Ruy Saez 6 | Asturias | AD', 'platform': 'Tablet', 'signup_at': '2024-04-19 07:13:49'}
+22-04-2024 23:12:46 {'user_id': 71440, 'user_name': 'Rosalina del Mateo', 'user_address': 'Paseo de Ignacia Soto 427 Puerta 5  | Huesca | PT', 'platform': 'Mobile', 'signup_at': '2024-04-20 07:33:40'}
+22-04-2024 23:12:46 Excepción al publicar el mensaje
+22-04-2024 23:12:46 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:46 {'user_id': 71440, 'user_name': 'Rosalina del Mateo', 'user_address': 'Paseo de Ignacia Soto 427 Puerta 5  | Huesca | PT', 'platform': 'Mobile', 'signup_at': '2024-04-20 07:33:40'}
+22-04-2024 23:12:47 {'user_id': 79410, 'user_name': 'Violeta Guzmán Barral', 'user_address': 'C. de Oriana Checa 8 | Ciudad | BW', 'platform': 'Laptop', 'signup_at': '2024-04-17 10:34:04'}
+22-04-2024 23:12:47 Excepción al publicar el mensaje
+22-04-2024 23:12:47 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:47 {'user_id': 79410, 'user_name': 'Violeta Guzmán Barral', 'user_address': 'C. de Oriana Checa 8 | Ciudad | BW', 'platform': 'Laptop', 'signup_at': '2024-04-17 10:34:04'}
+22-04-2024 23:12:48 {'user_id': 22005, 'user_name': 'Felicia Valbuena Arroyo', 'user_address': 'Pasaje de Mercedes Carreño 47 | La Coruña | FR', 'platform': 'Tablet', 'signup_at': '2024-04-05 20:02:28'}
+22-04-2024 23:12:48 Excepción al publicar el mensaje
+22-04-2024 23:12:48 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:48 {'user_id': 22005, 'user_name': 'Felicia Valbuena Arroyo', 'user_address': 'Pasaje de Mercedes Carreño 47 | La Coruña | FR', 'platform': 'Tablet', 'signup_at': '2024-04-05 20:02:28'}
+22-04-2024 23:12:49 {'user_id': 26427, 'user_name': 'Rosaura Feliu Ortuño', 'user_address': 'Pasadizo de Reyes Cabañas 79 | Las Palmas | HR', 'platform': 'Laptop', 'signup_at': '2024-04-21 17:58:58'}
+22-04-2024 23:12:49 Excepción al publicar el mensaje
+22-04-2024 23:12:49 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:49 {'user_id': 26427, 'user_name': 'Rosaura Feliu Ortuño', 'user_address': 'Pasadizo de Reyes Cabañas 79 | Las Palmas | HR', 'platform': 'Laptop', 'signup_at': '2024-04-21 17:58:58'}
+22-04-2024 23:12:50 {'user_id': 61817, 'user_name': 'Clara Ayala Carreño', 'user_address': 'Calle Macaria Neira 13 Puerta 5  | Las Palmas | JO', 'platform': 'Laptop', 'signup_at': '2024-04-01 08:03:07'}
+22-04-2024 23:12:50 Excepción al publicar el mensaje
+22-04-2024 23:12:50 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:50 {'user_id': 61817, 'user_name': 'Clara Ayala Carreño', 'user_address': 'Calle Macaria Neira 13 Puerta 5  | Las Palmas | JO', 'platform': 'Laptop', 'signup_at': '2024-04-01 08:03:07'}
+22-04-2024 23:12:51 {'user_id': 26073, 'user_name': 'Pastora Caballero Tello', 'user_address': 'Callejón César Cisneros 48 | Huesca | HN', 'platform': 'Tablet', 'signup_at': '2024-04-09 01:59:43'}
+22-04-2024 23:12:51 Excepción al publicar el mensaje
+22-04-2024 23:12:51 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:51 {'user_id': 26073, 'user_name': 'Pastora Caballero Tello', 'user_address': 'Callejón César Cisneros 48 | Huesca | HN', 'platform': 'Tablet', 'signup_at': '2024-04-09 01:59:43'}
+22-04-2024 23:12:52 {'user_id': 66158, 'user_name': 'Luciana Paloma Sevilla Iñiguez', 'user_address': 'Camino de Dionisio Carnero 2 | Tarragona | OM', 'platform': 'Tablet', 'signup_at': '2024-04-01 18:57:17'}
+22-04-2024 23:12:52 Excepción al publicar el mensaje
+22-04-2024 23:12:52 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:52 {'user_id': 66158, 'user_name': 'Luciana Paloma Sevilla Iñiguez', 'user_address': 'Camino de Dionisio Carnero 2 | Tarragona | OM', 'platform': 'Tablet', 'signup_at': '2024-04-01 18:57:17'}
+22-04-2024 23:12:53 {'user_id': 56721, 'user_name': 'Gloria Rubio Carrasco', 'user_address': 'Pasadizo Bibiana Cordero 790 Piso 1  | Huesca | VA', 'platform': 'Laptop', 'signup_at': '2024-04-04 20:30:32'}
+22-04-2024 23:12:53 Excepción al publicar el mensaje
+22-04-2024 23:12:53 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:53 {'user_id': 56721, 'user_name': 'Gloria Rubio Carrasco', 'user_address': 'Pasadizo Bibiana Cordero 790 Piso 1  | Huesca | VA', 'platform': 'Laptop', 'signup_at': '2024-04-04 20:30:32'}
+22-04-2024 23:12:54 {'user_id': 64843, 'user_name': 'Ciríaco Beltrán Camacho', 'user_address': 'Camino de Estefanía Baeza 48 Apt. 38  | Huesca | TG', 'platform': 'Laptop', 'signup_at': '2024-04-16 14:01:48'}
+22-04-2024 23:12:54 Excepción al publicar el mensaje
+22-04-2024 23:12:54 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:54 {'user_id': 64843, 'user_name': 'Ciríaco Beltrán Camacho', 'user_address': 'Camino de Estefanía Baeza 48 Apt. 38  | Huesca | TG', 'platform': 'Laptop', 'signup_at': '2024-04-16 14:01:48'}
+22-04-2024 23:12:55 {'user_id': 88742, 'user_name': 'David Garcés Manzano', 'user_address': 'Acceso de Daniel Blazquez 14 Puerta 3  | Huesca | QA', 'platform': 'Tablet', 'signup_at': '2024-04-21 00:05:30'}
+22-04-2024 23:12:55 Excepción al publicar el mensaje
+22-04-2024 23:12:55 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:55 {'user_id': 88742, 'user_name': 'David Garcés Manzano', 'user_address': 'Acceso de Daniel Blazquez 14 Puerta 3  | Huesca | QA', 'platform': 'Tablet', 'signup_at': '2024-04-21 00:05:30'}
+22-04-2024 23:12:56 {'user_id': 21090, 'user_name': 'María Pilar Tejada Lozano', 'user_address': 'Calle de Custodio Gallego 272 | Santa Cruz de Tenerife | NG', 'platform': 'Tablet', 'signup_at': '2024-04-20 09:31:41'}
+22-04-2024 23:12:56 Excepción al publicar el mensaje
+22-04-2024 23:12:56 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:56 {'user_id': 21090, 'user_name': 'María Pilar Tejada Lozano', 'user_address': 'Calle de Custodio Gallego 272 | Santa Cruz de Tenerife | NG', 'platform': 'Tablet', 'signup_at': '2024-04-20 09:31:41'}
+22-04-2024 23:12:57 {'user_id': 58574, 'user_name': 'Martina Pombo Escamilla', 'user_address': 'Cañada Diana Camacho 8 Apt. 41  | Cantabria | ZM', 'platform': 'Mobile', 'signup_at': '2024-04-13 15:32:12'}
+22-04-2024 23:12:57 Excepción al publicar el mensaje
+22-04-2024 23:12:57 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:57 {'user_id': 58574, 'user_name': 'Martina Pombo Escamilla', 'user_address': 'Cañada Diana Camacho 8 Apt. 41  | Cantabria | ZM', 'platform': 'Mobile', 'signup_at': '2024-04-13 15:32:12'}
+22-04-2024 23:12:58 {'user_id': 45080, 'user_name': 'David Gomis Páez', 'user_address': 'Glorieta de Armida Valderrama 474 Apt. 94  | Albacete | JM', 'platform': 'Mobile', 'signup_at': '2024-04-15 19:42:05'}
+22-04-2024 23:12:58 Excepción al publicar el mensaje
+22-04-2024 23:12:58 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:58 {'user_id': 45080, 'user_name': 'David Gomis Páez', 'user_address': 'Glorieta de Armida Valderrama 474 Apt. 94  | Albacete | JM', 'platform': 'Mobile', 'signup_at': '2024-04-15 19:42:05'}
+22-04-2024 23:12:59 {'user_id': 23679, 'user_name': 'María Manuela Corral Mascaró', 'user_address': 'Plaza de Inocencio Anguita 57 | Cuenca | GT', 'platform': 'Mobile', 'signup_at': '2024-04-04 17:59:16'}
+22-04-2024 23:12:59 Excepción al publicar el mensaje
+22-04-2024 23:12:59 'NoneType' object has no attribute 'send'
+22-04-2024 23:12:59 {'user_id': 23679, 'user_name': 'María Manuela Corral Mascaró', 'user_address': 'Plaza de Inocencio Anguita 57 | Cuenca | GT', 'platform': 'Mobile', 'signup_at': '2024-04-04 17:59:16'}
