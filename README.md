@@ -28,7 +28,7 @@ This repository contains various assignments completed during my Master's degree
 
 ### 🔁 Analytical Data Lifecycle
 - Data workflows with Pig and Hive
-- Stream processing with Storm and Flink (via Docker and PuTTY)
+- Stream processing with Zookeeper, Storm and Flink (via Docker and PuTTY)
 - SolR & Kibana dashboards for log and event data
 
 ### ⚡ Spark Ecosystem
