@@ -1,0 +1,173 @@
+//EJERCICIO_1
+
+// From the mongo shell
+// Create database
+
+show dbs
+use masterBigData
+db
+ 
+// Create collection
+
+db.createCollection("aerolineas")
+show collections
+
+
+// PS: From ubuntu terminal
+
+mongoimport --db masterBigData --collection aerolineas --file airlines.json --jsonArray
+
+//_______________________________________________________________________
+
+//EJERCICIO_2
+
+//From the mongo shell
+//Document structure
+
+db.aerolineas.findOne()
+
+//List of fields
+
+Object.keys(db.aerolineas.findOne())
+
+
+//Types of fields
+// Function to recursively print keys and types
+function printKeys(obj, prefix = "") {
+    Object.keys(obj).forEach(function (key) {
+        var fullPath = prefix + key;
+        var value = obj[key];
+
+        print(fullPath + " : " + typeof value);
+
+        if (typeof value === "object" && !Array.isArray(value)) {
+            // Recursively call for nested objects
+            printKeys(value, fullPath + ".");
+        }
+    });
+}
+
+// Assuming 'aerolineas' is the name of your collection
+var document = db.aerolineas.findOne();
+
+// Call the function for the document
+printKeys(document);
+
+
+
+
+//_______________________________________________________________________
+
+//EJERCICIO_3
+
+//Return Airport Names and Total Flights with "find"
+
+db.aerolineas.find( {}, { "Airport.Name": 1, "Statistics.Flights.Total": 1 } ).pretty()
+
+
+//______________________________________________________________________
+
+//EJERCICIO_4
+
+//For the year 2016, sort all airports (from highest to lowest) by the total number of minutes delayed ("Total Minutes Delayed" field), returning the "Name" field and without displaying the "_id" field.
+
+db.aerolineas.find( { "Time.Year": 2016 }, { "_id": 0, "Airport.Name": 1, "Statistics.Minutes Delayed.Total": 1 } ).sort( { "Statistics.Minutes Delayed.Total": -1 } ).pretty()
+
+
+//______________________________________________________________________
+
+//EJERCICIO_5
+
+//Show which airport for each year (from 2003 to 2016) has received the most flights on time and which airport has received the most delayed flights for each year.
+
+db.aerolineas.aggregate([ { $group: {_id: { Year: "$Time.Year", AirportCode: "$Airport.Code", AirportName: "$Airport.Name" }, maxOnTime: { $max: "$Statistics.Flights.On Time" }, maxDelayed: { $max: "$Statistics.Flights.Delayed" }}}, { $sort: { "_id.Year": 1, maxOnTime: -1, maxDelayed: -1 }}, { $group: { _id: "$_id.Year",mostOnTimeAirport: { $first: "$_id.AirportName" },mostDelayedAirport: { $first: "$_id.AirportName" },maxOnTime: { $first: "$maxOnTime" },maxDelayed: { $first: "$maxDelayed" }}}, { $project: { _id: 0,Year: "$_id",MostOnTimeAirport: "$mostOnTimeAirport",MostDelayedAirport: "$mostDelayedAirport",MaxOnTime: "$maxOnTime",MaxDelayed: "$maxDelayed" }} ]).pretty()
+
+
+
+//______________________________________________________________________
+
+//EJERCICIO_6
+
+//For the year 2003, for all airports, indicate the month in which most flights were cancelled by indicating the month and the number of total flights cancelled.
+
+db.aerolineas.aggregate([ { $match: { "Time.Year": 2003 }}, { $unwind: "$Time.Month" }, { $group: {_id: "$Time.Month",totalCancelledFlights: { $sum: "$Statistics.Flights.Cancelled" }}}, { $sort: { totalCancelledFlights: -1 }}, { $project: { _id: 0, Month: "$_id", TotalCancelledFlights: "$totalCancelledFlights" }} ])
+
+db.aerolineas.aggregate([ { $match: { "Time.Year": 2003 }}, { $unwind: "$Time.Month" }, { $group: {_id: "$Time.Month",totalCancelledFlights: { $sum: "$Statistics.Flights.Cancelled" }}}, { $sort: { totalCancelledFlights: -1 }}, { $limit: 1 }, { $project: { _id: 0, Month: "$_id", TotalCancelledFlights: "$totalCancelledFlights" }} ])
+
+
+//_____________________________________________________________________
+
+//EJERCICIO_7
+
+//For all airports and all cases in the "Minutes Delayed" field, indicate which cause has the most minutes of delay from 2003 to 2016.
+
+var totalcause = db.aerolineas.aggregate([ { $group: { _id: null, totalCarrierDelay: { $sum: "$Statistics.Minutes Delayed.Carrier" }, totalLateAircraftDelay: { $sum: "$Statistics.Minutes Delayed.Late Aircraft" }, totalNASDelay: { $sum: "$Statistics.Minutes Delayed.National Aviation System" }, totalSecurityDelay: { $sum: "$Statistics.Minutes Delayed.Security" }, totalWeatherDelay: { $sum: "$Statistics.Minutes Delayed.Weather" }} }] );
+
+var totalcause = totalcause.toArray();
+
+let maxPropertyValue = null;
+let maxPropertyKey = null;
+
+// Iterate over the properties of the object
+for (var key in totalcause[0]) {
+    const propertyValue = totalcause[0][key];
+
+    // Check if the property value is a number
+    if (maxPropertyValue === null || propertyValue > maxPropertyValue) {
+      maxPropertyValue = propertyValue;
+      maxPropertyKey = key;
+    }
+}
+
+
+
+//____________________________________________________________________
+
+//EJERCICIO_8
+
+// Teniendo en cuenta todos los aeropuertos y todas las casuísticas en el campo "# of Delays", indica cuál la causa tiene el mayor número de retrasos por mes de 2003 a 2016.
+// For all airports and all cases in the "# of Delays" field, indicate which cause has the highest number of delays per month from 2003 to 2016.
+// Por tanto, ¿afecta el cambio estacional a los retrasos? Tras el análisis, comprobamos que no. La causa predominante de los retrasos mensuales es el NAS.
+
+var resultsForAllMonths = [];
+
+for (var month = 1; month<=12;month++){
+    var totalcause = db.aerolineas.aggregate([
+      {
+        $match: {
+          "Time.Month": month
+        }
+      },
+      {
+        $group: {
+          _id: null,
+          totalCarrierDelay: { $sum: "$Statistics.# of Delays.Carrier" },
+          totalLateAircraftDelay: { $sum: "$Statistics.# of Delays.Late Aircraft" },
+          totalNASDelay: { $sum: "$Statistics.# of Delays.National Aviation System" },
+          totalSecurityDelay: { $sum: "$Statistics.# of Delays.Security" },
+          totalWeatherDelay: { $sum: "$Statistics.# of Delays.Weather" }
+        }
+      }
+    ]);
+
+    var totalcause = totalcause.toArray();
+
+    let maxPropertyValue = null;
+    let maxPropertyKey = null;
+
+    // Iterate over the properties of the object
+    for (var key in totalcause[0]) {
+        const propertyValue = totalcause[0][key];
+
+        // Check if the property value is a number
+        if (maxPropertyValue === null || propertyValue > maxPropertyValue) {
+          maxPropertyValue = propertyValue;
+          maxPropertyKey = key;
+        }
+    }
+    resultsForAllMonths.push({Month:month, MaxCause:maxPropertyKey, MaxNumber:maxPropertyValue});
+}
+printjson(resultsForAllMonths);
+
+//________________________________________________________
+
