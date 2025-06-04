@@ -1,0 +1,19 @@
+merve@onur-ideacenter:~/Desktop/Ejercicios1$ sh Ejercicios1.sh 
+
+
+ls:
+
+opción  -c    with -lt: sort by, and show, ctime (time of last modification of
+              file status information); with -l: show ctime and sort by  name;
+              otherwise: sort by ctime, newest first
+
+opción  -t    sort by time, newest first; see --time
+
+cat:
+
+opción  -n, --number
+              number all output lines
+
+opción  -T, --show-tabs
+              display TAB characters as ^I
+

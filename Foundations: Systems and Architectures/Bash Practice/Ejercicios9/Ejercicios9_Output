@@ -1,0 +1,12 @@
+#calculaFG.bash
+
+real	0m8,215s
+user	0m8,153s
+sys	0m2,259s
+
+#calculaFG_paralel.bash (es más rápido)
+
+real	0m0,003s
+user	0m0,000s
+sys	0m0,003s
+
