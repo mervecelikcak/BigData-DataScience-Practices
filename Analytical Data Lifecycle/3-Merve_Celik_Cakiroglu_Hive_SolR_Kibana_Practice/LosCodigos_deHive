@@ -1,0 +1,315 @@
+CREATE TABLE terremotos (No INT, Earthquake_Code INT, Latitude FLOAT, Longtitude FLOAT, Depth FLOAT, xM FLOAT, MD FLOAT, ML FLOAT, Mw FLOAT, Ms FLOAT, Mb FLOAT, Type STRING, Location STRING, Date_Time TIMESTAMP, City_Name STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE TBLPROPERTIES ("skip.header.line.count"="1");
+
+
+LOAD DATA INPATH 'earthquake_in_turkey.parquet' OVERWRITE INTO TABLE terremotosparquet;
+
+CREATE TABLE terremotosparquet (No INT, Earthquake_Code BIGINT, Latitude DOUBLE, Longtitude DOUBLE, Depth DOUBLE, xM DOUBLE, MD DOUBLE, ML DOUBLE, Mw DOUBLE, Ms DOUBLE, Mb DOUBLE, Type STRING, Location STRING, Date_Time TIMESTAMP, City_Name STRING) STORED AS PARQUET;
+
+LOAD DATA INPATH 'earthquakes.parquet' INTO TABLE terremotosparquet;
+
+----------------------------------------------------------------------------------------
+
+
+PARA EL FICHERO DE CSV
+
+H1) LOS TERREMOTOS SUELEN PRODUCIRSE CON MÁS FRECUENCIA EN UNA ESTACIÓN DETERMINADA
+
+
+SELECT
+    CASE
+        WHEN MONTH(Date_Time) IN (12, 1, 2) THEN 'Winter'
+        WHEN MONTH(Date_Time) IN (3, 4, 5) THEN 'Spring'
+        WHEN MONTH(Date_Time) IN (6, 7, 8) THEN 'Summer'
+        WHEN MONTH(Date_Time) IN (9, 10, 11) THEN 'Fall'
+    END AS Season,
+    COUNT(*) AS Earthquake_Count
+FROM
+    terremotos
+GROUP BY
+    CASE
+        WHEN MONTH(Date_Time) IN (12, 1, 2) THEN 'Winter'
+        WHEN MONTH(Date_Time) IN (3, 4, 5) THEN 'Spring'
+        WHEN MONTH(Date_Time) IN (6, 7, 8) THEN 'Summer'
+        WHEN MONTH(Date_Time) IN (9, 10, 11) THEN 'Fall'
+    END
+ORDER BY
+    Season;
+
+----------------------------------------------------------------------------------------
+
+
+-- Filter earthquakes with magnitude greater than 5
+
+
+SELECT
+    CASE
+        WHEN MONTH(Date_Time) IN (12, 1, 2) THEN 'Winter'
+        WHEN MONTH(Date_Time) IN (3, 4, 5) THEN 'Spring'
+        WHEN MONTH(Date_Time) IN (6, 7, 8) THEN 'Summer'
+        WHEN MONTH(Date_Time) IN (9, 10, 11) THEN 'Fall'
+    END AS Season,
+    COUNT(*) AS Earthquake_Count
+FROM
+    terremotos
+WHERE
+    xM > 5  
+GROUP BY
+    CASE
+        WHEN MONTH(Date_Time) IN (12, 1, 2) THEN 'Winter'
+        WHEN MONTH(Date_Time) IN (3, 4, 5) THEN 'Spring'
+        WHEN MONTH(Date_Time) IN (6, 7, 8) THEN 'Summer'
+        WHEN MONTH(Date_Time) IN (9, 10, 11) THEN 'Fall'
+    END
+ORDER BY
+    Season;
+
+
+----------------------------------------------------------------------------------------
+
+
+
+H2) EXISTE UNA RELACIÓN ENTRE EL TAMAÑO DEL TERREMOTO Y SU PROFUNDIDAD
+
+
+SELECT
+    CASE
+        WHEN xM >= 0 AND xM < 2 THEN '0-2'
+        WHEN xM >= 2 AND xM < 3.5 THEN '2-3.5'
+        WHEN xM >= 3.5 AND xM < 4 THEN '3.5-4'
+        WHEN xM >= 4 AND xM < 4.5 THEN '4-4.5'
+        WHEN xM >= 4.5 AND xM < 5 THEN '4.5-5'
+        WHEN xM >= 5 AND xM < 5.5 THEN '5-5.5'
+        WHEN xM >= 5.5 AND xM < 6 THEN '5.5-6'
+        WHEN xM >= 6 AND xM < 6.5 THEN '6-6.5'
+        WHEN xM >= 6.5 AND xM < 7 THEN '6.5-7'
+        WHEN xM >= 7 AND xM < 7.5 THEN '7-7.5'
+        WHEN xM >= 7.5 THEN '7.5+'
+    END AS Magnitude_Range,
+    ROUND(AVG(Depth), 2) AS Average_Depth
+FROM
+    terremotos
+GROUP BY
+    CASE
+        WHEN xM >= 0 AND xM < 2 THEN '0-2'
+        WHEN xM >= 2 AND xM < 3.5 THEN '2-3.5'
+        WHEN xM >= 3.5 AND xM < 4 THEN '3.5-4'
+        WHEN xM >= 4 AND xM < 4.5 THEN '4-4.5'
+        WHEN xM >= 4.5 AND xM < 5 THEN '4.5-5'
+        WHEN xM >= 5 AND xM < 5.5 THEN '5-5.5'
+        WHEN xM >= 5.5 AND xM < 6 THEN '5.5-6'
+        WHEN xM >= 6 AND xM < 6.5 THEN '6-6.5'
+        WHEN xM >= 6.5 AND xM < 7 THEN '6.5-7'
+        WHEN xM >= 7 AND xM < 7.5 THEN '7-7.5'
+        WHEN xM >= 7.5 THEN '7.5+'
+    END
+ORDER BY
+    Magnitude_Range;
+
+
+-------------------------------------------------
+
+-- See the correlations
+
+SELECT CORR(xM, Depth) AS Correlation
+FROM terremotos;
+
+
+----------------------------------------------------------------------------------------
+
+
+
+H3) LA MAYORÍA DE LOS GRANDES TERREMOTOS OCURREN DE NOCHE
+
+-- Filter earthquakes with magnitude over 6
+
+
+SELECT
+    HOUR(Date_Time) AS HourOfDay,
+    COUNT(*) AS EarthquakeCount
+FROM
+    terremotos
+WHERE
+    xM > 6 
+GROUP BY
+    HOUR(Date_Time)
+ORDER BY
+    HourOfDay;
+
+
+
+----------------------------------------------------------------------------------------
+
+H4) LOS TERREMOTOS DE CIERTA MAGNITUD SON MÁS FRECUENTES EN UNA REGIÓN DETERMINADA
+
+SELECT
+    City_Name,
+    CASE
+        WHEN xM >= 5.5 THEN '5.5+'
+    END AS Magnitude_Range,
+    COUNT(*) AS Earthquake_Count
+FROM
+    terremotos
+WHERE
+    xM >= 5.5
+GROUP BY
+    City_Name,
+    CASE
+        WHEN xM >= 5.5 THEN '5.5+'
+    END
+ORDER BY
+    Earthquake_Count DESC;
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+PARA EL FICHERO DE PARQUET
+
+H1) LOS TERREMOTOS SUELEN PRODUCIRSE CON MÁS FRECUENCIA EN UNA ESTACIÓN DETERMINADA
+
+
+SELECT
+    CASE
+        WHEN MONTH(Date_Time) IN (12, 1, 2) THEN 'Winter'
+        WHEN MONTH(Date_Time) IN (3, 4, 5) THEN 'Spring'
+        WHEN MONTH(Date_Time) IN (6, 7, 8) THEN 'Summer'
+        WHEN MONTH(Date_Time) IN (9, 10, 11) THEN 'Fall'
+    END AS Season,
+    COUNT(*) AS Earthquake_Count
+FROM
+    terremotosparquet
+GROUP BY
+    CASE
+        WHEN MONTH(Date_Time) IN (12, 1, 2) THEN 'Winter'
+        WHEN MONTH(Date_Time) IN (3, 4, 5) THEN 'Spring'
+        WHEN MONTH(Date_Time) IN (6, 7, 8) THEN 'Summer'
+        WHEN MONTH(Date_Time) IN (9, 10, 11) THEN 'Fall'
+    END
+ORDER BY
+    Season;
+
+--------------------------------------------------------------------
+
+
+-- Filter earthquakes with magnitude greater than 5
+
+
+SELECT
+    CASE
+        WHEN MONTH(Date_Time) IN (12, 1, 2) THEN 'Winter'
+        WHEN MONTH(Date_Time) IN (3, 4, 5) THEN 'Spring'
+        WHEN MONTH(Date_Time) IN (6, 7, 8) THEN 'Summer'
+        WHEN MONTH(Date_Time) IN (9, 10, 11) THEN 'Fall'
+    END AS Season,
+    COUNT(*) AS Earthquake_Count
+FROM
+    terremotosparquet
+WHERE
+    xM > 5  
+GROUP BY
+    CASE
+        WHEN MONTH(Date_Time) IN (12, 1, 2) THEN 'Winter'
+        WHEN MONTH(Date_Time) IN (3, 4, 5) THEN 'Spring'
+        WHEN MONTH(Date_Time) IN (6, 7, 8) THEN 'Summer'
+        WHEN MONTH(Date_Time) IN (9, 10, 11) THEN 'Fall'
+    END
+ORDER BY
+    Season;
+
+
+----------------------------------------------------------------------------------------
+
+H2) EXISTE UNA RELACIÓN ENTRE EL TAMAÑO DEL TERREMOTO Y SU PROFUNDIDAD
+
+
+SELECT
+    CASE
+        WHEN xM >= 0 AND xM < 2 THEN '0-2'
+        WHEN xM >= 2 AND xM < 3.5 THEN '2-3.5'
+        WHEN xM >= 3.5 AND xM < 4 THEN '3.5-4'
+        WHEN xM >= 4 AND xM < 4.5 THEN '4-4.5'
+        WHEN xM >= 4.5 AND xM < 5 THEN '4.5-5'
+        WHEN xM >= 5 AND xM < 5.5 THEN '5-5.5'
+        WHEN xM >= 5.5 AND xM < 6 THEN '5.5-6'
+        WHEN xM >= 6 AND xM < 6.5 THEN '6-6.5'
+        WHEN xM >= 6.5 AND xM < 7 THEN '6.5-7'
+        WHEN xM >= 7 AND xM < 7.5 THEN '7-7.5'
+        WHEN xM >= 7.5 THEN '7.5+'
+    END AS Magnitude_Range,
+    ROUND(AVG(Depth), 2) AS Average_Depth
+FROM
+    terremotosparquet
+GROUP BY
+    CASE
+        WHEN xM >= 0 AND xM < 2 THEN '0-2'
+        WHEN xM >= 2 AND xM < 3.5 THEN '2-3.5'
+        WHEN xM >= 3.5 AND xM < 4 THEN '3.5-4'
+        WHEN xM >= 4 AND xM < 4.5 THEN '4-4.5'
+        WHEN xM >= 4.5 AND xM < 5 THEN '4.5-5'
+        WHEN xM >= 5 AND xM < 5.5 THEN '5-5.5'
+        WHEN xM >= 5.5 AND xM < 6 THEN '5.5-6'
+        WHEN xM >= 6 AND xM < 6.5 THEN '6-6.5'
+        WHEN xM >= 6.5 AND xM < 7 THEN '6.5-7'
+        WHEN xM >= 7 AND xM < 7.5 THEN '7-7.5'
+        WHEN xM >= 7.5 THEN '7.5+'
+    END
+ORDER BY
+    Magnitude_Range;
+
+
+-------------------------------------------------
+
+-- See the correlations
+
+SELECT CORR(xM, Depth) AS Correlation
+FROM terremotosparquet;
+
+
+----------------------------------------------------------------------------------------
+
+
+H3) LA MAYORÍA DE LOS GRANDES TERREMOTOS OCURREN DE NOCHE
+
+-- Filter earthquakes with magnitude over 6
+
+
+SELECT
+    HOUR(Date_Time) AS HourOfDay,
+    COUNT(*) AS EarthquakeCount
+FROM
+    terremotosparquet
+WHERE
+    xM > 6 
+GROUP BY
+    HOUR(Date_Time)
+ORDER BY
+    HourOfDay;
+
+
+
+----------------------------------------------------------------------------------------
+
+
+H4) LOS TERREMOTOS DE CIERTA MAGNITUD SON MÁS FRECUENTES EN UNA REGIÓN DETERMINADA
+
+SELECT
+    City_Name,
+    CASE
+        WHEN xM >= 5.5 THEN '5.5+'
+    END AS Magnitude_Range,
+    COUNT(*) AS Earthquake_Count
+FROM
+    terremotosparquet
+WHERE
+    xM >= 5.5
+GROUP BY
+    City_Name,
+    CASE
+        WHEN xM >= 5.5 THEN '5.5+'
+    END
+ORDER BY
+    Earthquake_Count DESC;
+
